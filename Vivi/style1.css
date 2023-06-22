@@ -1,0 +1,148 @@
+body{
+	border: 0px solid black;
+    background-image: url(images/montagne-bleu.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+label.titre{
+	font-weight: bold;
+}
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid white;
+    background: #fff; 
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=radio]{
+	margin: 8px 0;
+}
+
+/* Set a style for all buttons */
+input[type=submit], [type=button]{
+    background-color: #314582;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #314582;
+    border: 1px solid #314582;
+}
+
+input[type=button]:hover {
+    background-color: white;
+    color: #314582;
+    border: 1px solid #314582;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,419 @@
+body{
+	border: 0px solid red;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	background-image: url(images/montagne3.jpg);
+}
+
+header{
+	border: 1px solid blue;
+	background-color: transparent; 
+	backdrop-filter: blur(8px);
+	height:100%; 
+	margin: 0 10% 0 10%;
+	padding: 0 0 41px 0;
+}
+
+div.logo{
+	border: 1px solid red;
+	float:left;
+	margin: 0;
+	padding: 2px;
+}
+
+div.deroulant{
+	float:right;
+}
+
+div.accueil{
+	border: 0px solid yellow;
+	text-align: center;
+	padding: 0; 
+	margin: 0 10% 0 10%;
+}
+
+div.footer-bas{
+	border: 1px solid yellow;
+	text-align: center;
+	padding: 0; 
+	margin: 0 10% 0 10%;
+}
+
+div.footer-gauche{
+	border: 1px solid yellow;
+	text-align: center;
+	padding: 0; 
+	margin: 0 10% 0 10%;
+}
+
+div.bienvenue{
+	border: 1px solid yellow;
+	text-align: center;
+}
+
+footer{
+	border: 1px solid green;
+	text-align: center;
+	color: white;
+	/*background-color:rgba(255,255,255,0.2);/*#192057;*/ 
+	/*backdrop-filter: blur(8px);*/
+}
+
+p.copyright{
+	color: white;
+}
+
+h1{
+	color: white;
+}
+
+/*liste d�roulante*/
+#menu-demo2{
+	padding:1px;
+	margin:0;
+	list-style:none;
+	text-align:right;
+}
+#menu-demo2 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+#menu-demo2 li{
+	display:inline-block;
+	position:relative;
+	border-radius:0; /*bordure menu*/
+}
+#menu-demo2 ul li{
+	display:inherit;
+}
+#menu-demo2 ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .8s all .3s;
+	-webkit-transition: .8s all .3s;
+	transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+	max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child, #menu-demo2 li:last-child{
+	background-color: #1D2840; /*bleu-nuit,menu d�roulant "h�bergement" */
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li, #menu-demo2 li:last-child li{
+	background:#0C121E; /*bleu-ombre*/
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover, #menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+	background: white;
+	border: 1px solid #314582; /*bleu-clair*/
+}
+/* les a href */
+#menu-demo2 a{
+	text-decoration:none;
+	display:block;
+	padding:8px 32px;
+	color:#fff;
+	font-family:arial;
+}
+#menu-demo2 ul a{
+	padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+	color:#fff;
+	text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+	color:#314582;/*bleu-clair*/
+}
+
+div.titre{
+	border: 1px solid red;
+	color: white;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+input.se_connecter {
+    border: 0;
+    line-height: 2.3;
+    padding: 0 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #1D2840;
+}
+
+input.se_connecter:hover {
+    background-color: #0C121E;
+}
+
+input.se_connecter:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);
+}
+
+a.reseau{
+	color: white;
+}
+
+a.reseau:hover {
+    color: white;
+}
+
+a.reseau:active {
+    
+}
+
+div.bienvenue{
+	text-align: center;
+}
+
+footer{
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+div.contact, div.rejoindre{
+	border: 0px solid blue;
+	height:100%; 
+	margin: 0;
+	padding: 0;
+}
+
+div.info{
+	border: 0px solid green;
+	padding: 10px 370px 10px 370px;
+}
+
+div.footer-gauche{
+	border: 1px solid yellow;
+	float:left;
+	margin: 10px;
+	padding: 0;
+}
+
+div.diviseur{
+	height: 2px;
+	width: 50%;
+	background-color: #5A5A5A;
+	margin: 30px 25% 50px 25%;
+}
+
+div.partenaire{
+	text-align: center;
+}
+
+p{
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$color-base:#fff;
+$color-text:#222;
+$color-accent: desaturate(navy,80%);
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background:$color-accent;
+  color:$color-text;
+  line-height:normal;
+  font-size:16px;
+  font-family:sans-serif;
+}
+
+a,a:hover{color:$color-accent; text-decoration : none; font-weight:600;}
+
+nav{
+  position:fixed;
+  left:0;right:0;top:0;
+  height:50px;
+  background:$color-base;
+  box-shadow:0 0px 9px 4px rgba(#000, .1), 0 -5px 2px 2px rgba(#000, .1);
+  z-index:1000;
+  min-width:580px;
+  
+  .logo{
+    position:relative;
+    float:left;
+    height:50px;
+    line-height:50px;
+    padding:0 15px;
+    font-size:22px;
+    font-weight:900;
+    text-transform:uppercase;
+    span{
+      display:inline-block;
+      position:relative;
+      top:-8px;
+      font-size:13pt;      
+    }
+    
+    &:hover{
+      background:lighten($color-accent,40);
+    }
+  }
+  
+  .links{
+    float:right;
+    margin-right: 30px;    
+    position:relative;
+    
+    li{
+      float:left;
+      list-style:none;
+      position:relative;
+      margin:10px;
+      display:inline-block;      
+      
+      &>a{
+        position:relative;
+        display:inline-block;            
+        padding:0 10px;
+        line-height:30px;
+        height:30px;        
+        
+        &:hover{
+          color:$color-base;
+          background:$color-accent;
+          border-radius:2px;
+        }
+        
+        &[class^="trigger-"]{padding-right:40px;}
+        
+        .arrow{
+          position:absolute;
+          width:10px;height:10px;   
+          top:35%;
+          text-align:center;          
+          right:10px;
+          border-width: 5px 5px 0 5px;
+          border-style:solid;
+          border-color: rgba(#000, .3) transparent;
+          
+          &:after{            
+            content:"";
+            border-left:1px solid rgba(#000,.15);
+            top:-10px;left:-15px;
+            position:absolute;            
+            height:15px;    
+          }
+          
+        }
+        
+      }
+                
+      ul{
+          position:absolute;          
+          left:0; 
+          //top:40px;
+          margin:0;
+          background:$color-base;
+          border-radius:2px;          
+          box-shadow:0 0 5px rgba(#000, .15);
+          display:none;
+        
+          >li{
+            clear:both;            
+            list-style:none;            
+            display:block;
+            padding:0 10px;
+            margin:0;
+            width:100%;            
+            
+            &:hover{
+              background:lighten($color-accent,40);
+              >a{
+                background:lighten($color-accent,40);
+                color:$color-base;
+              }
+            }
+          }         
+          
+        }
+      
+      &:hover {
+          > .drop{
+            display:block;
+            animation:fadeInRight .3s ease;
+            -webkit-animation:fadeInRight .3s ease;
+        }
+      }
+      
+    }
+  }
+      
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+*/
+
+
+
+
